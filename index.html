@@ -46,6 +46,33 @@
       color: #2563eb;
       text-decoration: none;
     }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111827;
+      color: white;
+    }
+    /* Dark mode styles */
+    .dark-mode {
+      background-color: #111827;
+      color: #f9fafb;
+    }
+    .dark-mode .section {
+      background-color: #1f2937;
+      color: #f9fafb;
+    }
+    .dark-mode a {
+      color: #60a5fa;
+    }
+    #themeToggle {
+      margin-top: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -53,6 +80,7 @@
   <header>
     <h1>Leul Nigussie</h1>
     <p>Cybersecurity Portfolio | Red Team • Blue Team • Cloud • IAM • GRC</p>
+    <button id="themeToggle">Toggle Theme</button>
   </header>
 
   <div class="content">
@@ -64,13 +92,13 @@
     <div class="section">
       <h2>🔐 Red Team</h2>
       <p>Enum4linux, CrackMapExec, SMB enumeration, password brute force, LOLBAS attacks, lateral movement via PsExec, Pass-the-Hash.</p>
-      
+
       <h2>🛡️ Blue Team</h2>
       <p>Sysmon + Splunk detection rules, threat correlation, PowerShell attack detection, endpoint visibility.</p>
-      
+
       <h2>☁️ Cloud Security (AWS)</h2>
       <p>3-tier VPC architecture, EC2, Security Groups, S3 bucket logging, CloudTrail + GuardDuty.</p>
-      
+
       <h2>📊 GRC</h2>
       <p>NIST 800-53 mapping, risk register creation, audit policies, regulatory alignment (HIPAA).</p>
 
@@ -82,19 +110,38 @@
       <h2>📁 View My Full Portfolio</h2>
       <div class="links">
         <a href="https://github.com/LeulCyber/ProjectLeulN" target="_blank">GitHub ProjectLeulN</a>
-        <a href="https://www.linkedin.com/in/leulnigussie/" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/leul-nigussie" target="_blank">LinkedIn</a>
       </div>
     </div>
 
     <div class="section">
       <h2>🎓 Education & Certifications</h2>
-       <ul>
-         <li>MSc Cybersecurity – WGU (in progress)</li>
-         <li>BSc Cybersecurity and Information Assurance – WGU, Millcreek, UT</li>
-         <li>BS Microbiology – University of Gondar</li>
-         <li>PenTest+, CySA+, Security+, SSCP</li>
-         <li>ITIL, Linux+, Network+, A+</li>
-        </ul>
+      <ul>
+        <li>MSc Cybersecurity – Western Governors University (in progress)</li>
+        <li>BSc Cybersecurity and Information Assurance – WGU, Millcreek, UT</li>
+        <li>BS Microbiology – University of Gondar</li>
+        <li>PenTest+, CySA+, Security+, SSCP</li>
+        <li>ITIL, Linux+, Network+, A+</li>
+      </ul>
     </div>
+
+    <div class="section">
+      <h2>📬 Contact Me</h2>
+      <p>Email: <a href="mailto:leuln1212@gmail.com">leuln1212@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/leul-nigussie" target="_blank">linkedin.com/in/leul-nigussie</a></p>
+      <p>GitHub: <a href="https://github.com/LeulCyber/ProjectLeulN" target="_blank">github.com/LeulCyber/ProjectLeulN</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Leul Nigussie | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
